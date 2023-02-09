@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="337" height="320" viewBox="0 0 337 320">
+  <g id="_3_providers" data-name="3 providers" transform="translate(-1145 -1197)">
+    <g id="Group_3" data-name="Group 3" transform="translate(1482.067 1517.399) rotate(180)">
+      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0.067 0.399)" fill="rgba(0,0,0,0.35)" stroke="#fff" stroke-width="1">
+        <ellipse cx="96" cy="95.5" rx="96" ry="95.5" stroke="none"/>
+        <ellipse cx="96" cy="95.5" rx="95.5" ry="95" fill="none"/>
+      </g>
+      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(145.067 0.399)" fill="rgba(0,0,0,0.35)" stroke="#fff" stroke-width="1">
+        <ellipse cx="96" cy="95.5" rx="96" ry="95.5" stroke="none"/>
+        <ellipse cx="96" cy="95.5" rx="95.5" ry="95" fill="none"/>
+      </g>
+      <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(73.067 128.399)" fill="rgba(0,0,0,0.35)" stroke="#fff" stroke-width="1">
+        <circle cx="96" cy="96" r="96" stroke="none"/>
+        <circle cx="96" cy="96" r="95.5" fill="none"/>
+      </g>
+    </g>
+    <text id="Talent_Providers" data-name="Talent
+Providers" transform="translate(1314 1265)" fill="#fff" font-size="22" font-family="DIN2014-Demi, 'DIN \32 014'" font-weight="300"><tspan x="-28.479" y="0">Talent</tspan><tspan x="-45.166" y="28">Providers</tspan></text>
+    <text id="Data_Providers" data-name="Data
+Providers" transform="translate(1223 1413)" fill="#fff" font-size="22" font-family="DIN2014-Demi, 'DIN \32 014'" font-weight="300"><tspan x="-21.076" y="0">Data</tspan><tspan x="-45.166" y="28">Providers</tspan></text>
+    <text id="Resource_Providers" data-name="Resource
+Providers" transform="translate(1401 1413)" fill="#fff" font-size="22" font-family="DIN2014-Demi, 'DIN \32 014'" font-weight="300"><tspan x="-42.944" y="0">Resource</tspan><tspan x="-45.166" y="28">Providers</tspan></text>
+  </g>
+</svg>
