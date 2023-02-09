@@ -234,7 +234,7 @@ footer {
     top: 10px;
   }
   #committee div:last-child {
-    grid-area: 2/2/5/3;
+    grid-area: 2/2/5/-1;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1200px) {
