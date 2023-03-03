@@ -1,6 +1,7 @@
 @import "reset.css";
 
 /*font*/
+/*
 @font-face {
   font-family: "din-2014", sans-serif;
   src: url("https://use.typekit.net/aah3orw.css");
@@ -11,19 +12,25 @@
   src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
   unicode-range: U+AC00-D7A3;
 }
+*/
 
-* {
-  font-family: "din-2014", "din-2014-narrow", "Noto Sans KR";
-  line-height: 150%;
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+
+* { 
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 }
+
 body {
   background-color: black;
   color: white;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 150%;
 }
 
 main {
-  margin: 0px 20px;
+  width: 1100px;
 }
 .bg-img {
   position: fixed;
@@ -32,26 +39,24 @@ main {
   width: 100%;
   height: 100vh;
 }
-
 .bg-img img {
   object-fit: cover;
-  width: 100vh;
-  height: 100%;
-  rotate: 90deg;
+  width: 100%;
+  height: 100vh;
 }
 
 h6 {
   font-size: 90px;
-  font-family: "din-2014", sans-serif;
   font-weight: 600;
   line-height: 110%;
-  padding-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 h1 {
-  font-size: 48px;
-  font-family: "din-2014-narrow", sans-serif;
+  font-size: 38px;
   font-weight: 500;
-  margin-top: 8vh;
+  margin-top: 70px;
+  margin-bottom: 40px;
   padding-bottom: 10px;
   width: 100%;
   border-bottom: 2px white solid;
@@ -59,17 +64,30 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-weight: 600;
-  margin-top: 4vh;
-  margin-bottom: 2vh;
+  font-weight: 500;
+  margin-bottom: 18px;
+  line-height: 130%;
 }
 
-span,
-p {
+span {
   font-weight: 400;
 }
-section h1 {
-  grid-column: 1/-1;
+
+p {
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+
+#vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+#how {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px ;
 }
 
 #how .img-box {
@@ -77,11 +95,189 @@ section h1 {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 #how .img-box img {
   object-fit: cover;
-  width: 85%;
+  width: 100%;
 }
+
+section h1 {
+  grid-column: 1/-1;
+}
+
+#tracks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+#tracks .img-box {
+  background-color: black;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  border: black 1px solid;
+}
+
+#tracks .img-box img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.schedule_months {
+  display: grid;
+  grid-template-columns: 200px repeat(9, 1fr);
+  column-gap: 4px;
+  margin-bottom: 16px;
+} 
+
+.schedule_track-1 {
+  display: grid;
+  grid-template-columns: 200px 1.4fr 0.9fr 2.7fr 1fr 3fr;
+  column-gap: 5px;
+  margin-bottom: 16px;
+
+} 
+
+.schedule_track-2 {
+  display: grid;
+  grid-template-columns: 200px 2.7fr 2.3fr 1fr 3fr;
+  column-gap: 5px;
+
+} 
+
+.schedule_track-1 div, .schedule_track-2 div {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 130%;
+  font-size: 15px;
+  word-break: keep-all;
+}
+
+#committee {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#committee div:last-child {
+  grid-area: 2/2/5/-1;
+}
+
+#committee div:last-child p {
+  margin-bottom: 0px;
+  line-height: 220%;
+}
+#committee .committee-name {
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+
+footer {
+  font-family: "din-2014", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* Mobile - Portrait */
+@media (max-width:575px) {
+  body {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  main {
+    width: 100%;
+  }
+  h6 {
+    font-size: 60px;
+    line-height: 130%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  h1 {
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 26px;
+  }
+  #vision, #how, #tracks{
+    display: flex;
+    flex-direction: column;
+}
+
+#tracks .img-box {
+
+  height: 220px;
+}
+
+#schedule {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1.5fr 5fr;
+  column-gap: 6px;
+}
+
+#schedule h2 {
+font-size: 17px;
+}
+
+.schedule_months {
+  order: 1;
+grid-template-columns: 1fr;
+grid-template-rows: 50px repeat(9, 52px);
+row-gap: 5px;
+margin-bottom: 16px;
+grid-auto-flow: column;
+text-align: center;
+}
+.schedule_track-1 {
+  height: 100%;
+order: 0;
+grid-template-columns: 1fr;
+grid-template-rows: 50px 1.4fr 0.9fr 2.7fr 1fr 3fr;
+row-gap: 5px;
+margin-bottom: 16px;
+grid-auto-flow: column;
+}
+.schedule_track-2 {
+  height: 100%;
+  order:2;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 2.7fr 2.3fr 1fr 3fr;
+  row-gap: 5px;
+  margin-bottom: 16px;
+  grid-auto-flow: column;
+}
+
+#committee {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
+/*
+
 
 #schedule h1 {
   margin-bottom: 4vh;
@@ -154,13 +350,6 @@ section h1 {
   margin-bottom: 8vh;
 }
 
-footer p {
-  font-family: "din-2014", sans-serif;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 150%;
-  margin-bottom: 20px;
-}
 
 @media screen and (min-width: 700px) {
   h6 {
