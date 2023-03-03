@@ -53,17 +53,17 @@ h6 {
   padding-bottom: 40px;
 }
 h1 {
-  font-size: 38px;
-  font-weight: 500;
+  font-size: 34px;
+  font-weight: 200;
   margin-top: 70px;
   margin-bottom: 40px;
   padding-bottom: 10px;
   width: 100%;
-  border-bottom: 2px white solid;
+  border-bottom: 2.5px white solid;
   line-height: 120%;
 }
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 18px;
   line-height: 130%;
@@ -121,6 +121,7 @@ section h1 {
   display: flex;
   justify-content: center;
   border: black 1px solid;
+  margin-bottom: 36px;
 }
 
 #tracks .img-box img{
@@ -148,6 +149,7 @@ section h1 {
   display: grid;
   grid-template-columns: 200px 2.7fr 2.3fr 1fr 3fr;
   column-gap: 5px;
+  margin-bottom: 36px;
 
 } 
 
@@ -174,7 +176,7 @@ section h1 {
 
 #committee div:last-child p {
   margin-bottom: 0px;
-  line-height: 220%;
+  line-height: 210%;
 }
 #committee .committee-name {
   font-weight: 500;
@@ -275,8 +277,11 @@ grid-auto-flow: column;
 }
 }
 
-@media screen and  {
-  
+@media screen and (max-width: 1200px) and (min-width:576px){
+  body {
+    padding: 0px 50px;
+    box-sizing: border-box;
+  }
 }
 
 /*
