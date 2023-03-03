@@ -192,7 +192,7 @@ footer {
 }
 
 /* Mobile - Portrait */
-@media (max-width:575px) {
+@media screen and (max-width:575px) {
   body {
     padding: 16px;
     box-sizing: border-box;
@@ -275,6 +275,9 @@ grid-auto-flow: column;
 }
 }
 
+@media screen and  {
+  
+}
 
 /*
 
