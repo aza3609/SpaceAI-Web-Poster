@@ -91,7 +91,7 @@ p {
 }
 
 #how .img-box {
-  padding: 10px 30px;
+  padding: 10px 60px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -227,6 +227,9 @@ footer {
     flex-direction: column;
 }
 
+#how .img-box {
+  padding: 0px 10%;}
+
 #tracks .img-box {
 
   height: 220px;
@@ -274,6 +277,12 @@ grid-auto-flow: column;
 #committee {
   display: flex;
   flex-direction: column;
+}
+}
+
+@media screen and (max-width: 1000px) and (min-width:576px){
+#how .img-box {
+  padding: 0px;
 }
 }
 
